@@ -95,6 +95,8 @@ li:hover{
     }
     .button{
         margin: 5px 10px;
+        font-size: 30px;
+        font-weight: normal;
     }
     li:hover{
         background-color: transparent;
