@@ -1,0 +1,102 @@
+body{
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.box {
+    width: 200px;
+    min-height: 100vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    text-align: end;
+    transition: all 0.4s linear;
+    background-color: rgb(139, 184, 224);
+}
+
+.main {
+    border: 1px solid black;
+    position: relative;
+    margin: 50px;
+    padding: 20px;
+    margin-left: 50px;
+    transition: all 0.4s linear;
+}
+
+p {
+    text-align: justify;
+}
+.button{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 5px 10px;
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 5px 5px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    z-index: 2;
+}
+.slide-box{
+    position: fixed;
+    left: 0px;
+}
+.slide-main{
+    margin-left: 250px;
+}
+ul{
+    margin-top: 100px;
+    list-style: none;
+    text-align: start;
+}
+li{
+    margin: 30px 10px;
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+    color: rgb(43, 41, 41);
+    transition: all 0.3s;
+}
+li:hover{
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 5px white;
+}
+#check{
+    background-color: black;
+    z-index: 2;
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .main {
+        border: 1px solid black;
+        position: relative;
+        margin: 5px;
+        padding: 10px;
+        transition: all 0.4s linear;
+        padding-top: 28px;
+    }
+    .slide-box{
+        position: fixed;
+        left: 5px;
+        top: 5px;
+        z-index: 1;
+    }
+    .box{
+        min-height: 99vh;
+    }
+    .button{
+        margin: 5px 10px;
+    }
+    li:hover{
+        background-color: transparent;
+    }
+}
