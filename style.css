@@ -23,6 +23,7 @@ body::-webkit-scrollbar{
     padding: 20px;
     margin-left: 50px;
     transition: all 0.4s linear;
+    background-color: white;
 }
 
 p {
@@ -72,7 +73,10 @@ li:hover{
 #check{
     background-color: black;
     z-index: 2;
-    display: none;
+    text-align: end;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 @media screen and (max-width:500px) {
